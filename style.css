@@ -54,10 +54,39 @@ header {
     color: white;
 }
 
-.signin a {
+.signin button {
     color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 10px;
+    background-color: white;
+}
+
+.modal,
+.modal-bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-page {
+    z-index: 2;
+    min-width: 30vw;
+    min-height: 30vw;
+    overflow: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.modal-page p {
+    color: black;
 }
 
 

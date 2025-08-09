@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script defer src="/script/app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,11 +22,24 @@
                     
                 </div>
                 <div class="signin">
-                    <a class="register" href="#">Sign In</a>
+                    <button onclick="openSignIn()" class="register">
+                        Sign In
+                    </button>
                 </div>
             
             </nav>
         </div>
     </header>
+
+    <section>
+        <div id="modalSignin" class="modal" style="display: none;">
+            <div onclick="closeModal()" class="modal-bg"></div>
+                <div class="modal-page">
+                    <p>Sign In</p>
+                    <div class="modal-sign-in">
+                    </div>
+                </div>
+        </div>
+    </section>
 </body>
 </html>
