@@ -11,3 +11,8 @@ const lastName = 'Boonanan'
 const age = 18
 
 console.log(`${firstName}   ${lastName} ${age}`)
+
+
+function Name() {
+    console.log('HEELO THIS IS FUNTION')
+}
