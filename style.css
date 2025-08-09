@@ -37,9 +37,27 @@ header {
     font-size: 40px;
 }
 
-.login a {
+.menu a {
     color: rgb(0, 0, 0);
     font-weight: bold;
+    padding: 10px;
+}
+
+.register {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.register:hover {
+    background-color: black;
+    color: white;
+}
+
+.signin a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px;
 }
 
 
