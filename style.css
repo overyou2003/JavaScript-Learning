@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: rgb(37, 37, 87) ;
+    background-color: rgb(24, 24, 66) ;
 }
 
 .container {
@@ -29,7 +29,7 @@ nav {
 
 header {
     background-color: transparent;
-    height: 80px;
+    height: 100px;
     display: flex;          
     align-items: center; 
     box-shadow: 0px 1px 7px rgb(12, 6, 6);
@@ -43,37 +43,36 @@ header {
 }
 
 .menu a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 10px;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    color: rgb(252, 7, 7);;
+    color: rgb(143, 118, 253);;
 }
 
 .register {
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
-    
     margin-left: 10px;
     
 }
 
 .register:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(87, 55, 230);
     color: white;
     border-color: transparent;
 }
 
 .signin button {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 10px;
-    background-color: white;
+    background-color: transparent;
 }
 
 .modal,
