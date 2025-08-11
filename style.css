@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+body {
+    background-color: rgb(37, 37, 87) ;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -24,7 +28,7 @@ nav {
 }
 
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     height: 80px;
     display: flex;          
     align-items: center; 
@@ -32,7 +36,7 @@ header {
 }
 
 .logo a {
-    color: rgb(255, 0, 0);
+    color: white;
     font-weight: bold;
     font-size: 35px;
     margin-right: 10px;
