@@ -32,7 +32,7 @@ header {
     height: 100px;
     display: flex;          
     align-items: center; 
-    box-shadow: 0px 1px 7px rgb(12, 6, 6);
+    box-shadow: 0px 1px 7px rgb(255, 255, 255);
 }
 
 .logo a {
