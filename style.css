@@ -50,7 +50,7 @@ header {
 }
 
 .menu a:hover {
-    color: rgb(143, 118, 253);;
+    color: rgb(33, 17, 102);
 }
 
 .register {
@@ -63,7 +63,7 @@ header {
 }
 
 .register:hover {
-    background-color: rgb(87, 55, 230);
+    background-color: rgb(33, 17, 102);
     color: white;
     border-color: transparent;
 }
