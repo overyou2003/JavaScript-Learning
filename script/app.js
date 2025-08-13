@@ -1,7 +1,7 @@
 
 
 
-const firstName = 'Patiphat'
+const firstName = 'PATIPHATTT'
 const lastName = 'Boonanan'
 const age = 18
 
