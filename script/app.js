@@ -9,7 +9,7 @@ console.log(`${firstName}   ${lastName} ${age}`)
 
 
 function Name() {
-    console.log('HEELO THIS IS FUNTION')
+    console.log('HI HI HELLO HIHI')
 }
 
 function closeModal() {
