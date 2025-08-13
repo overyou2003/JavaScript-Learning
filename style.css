@@ -63,13 +63,13 @@ header {
 }
 
 .register:hover {
-    background-color: rgb(33, 17, 102);
+    background-color: rgb(34, 19, 100);
     color: white;
     border-color: transparent;
 }
 
 .signin button {
-    color: rgb(255, 255, 255);
+    color: rgb(253, 253, 253);
     font-weight: bold;
     padding: 10px;
     background-color: transparent;
