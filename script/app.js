@@ -21,3 +21,9 @@ function openSignIn() {
 }
 
 console.log("Dreams Hello Dreams")
+
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+    
+// }
