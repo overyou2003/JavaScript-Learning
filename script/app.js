@@ -19,3 +19,5 @@ function closeModal() {
 function openSignIn() {
     $("#modalSignin").css('display' , 'flex');
 }
+
+console.log("Dreams Hello Dreams")
