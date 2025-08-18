@@ -10,6 +10,7 @@ console.log(`${firstName}   ${lastName} ${age}`)
 
 function Name() {
     console.log('HI HI HELLO HIHI')
+    console.log('Enimie nimo')
 }
 
 function closeModal() {
