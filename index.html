@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="/script/app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">Portfolio.</a>
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Services</a>
+                </div>
+                <div class="signin">
+                    <button onclick="openSignIn()" class="register">
+                        Get Started
+                    </button>
+                </div>
+            
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div id="modalSignin" class="modal" style="display: none;">
+            <div onclick="closeModal()" class="modal-bg"></div>
+                <div class="modal-page">
+                    <p>Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod voluptas sint sed architecto excepturi, quos quisquam tempore odit error consequuntur, aliquid quo vero quidem nobis in corrupti. Corrupti, tempore neque?</p>
+                    <div class="modal-sign-in">
+                    </div>
+                </div>
+        </div>
+    </section>
+</body>
+</html>
