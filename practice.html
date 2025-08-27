@@ -7,7 +7,10 @@
 </head>
 <body>
     <h1><p id="text-topic">Let's go Let's go</p></h1>
-    <button onclick="alert(document.getElementById('text-topic').textContent)">CLICK 1</button>
-    <button type="button" onclick="document.getElementById('text-topic').style.color = 'red'" >CLICK 2</button>
+    <button onclick="document.getElementById('text-input').removeAttribute('disabled')">Un disabled</button>
+    <button type="button" onclick="document.getElementById('text-input').setAttribute('disabled' , '')">disabled</button>
+    <input id="text-input" type="text" placeholder="Input your name pls!">
+
+    
 </body>
 </html>
