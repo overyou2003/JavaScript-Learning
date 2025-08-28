@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>List</h2>
+    <ul id="list"></ul>
 
     <form id="formCreator">
         <fieldset>
@@ -22,5 +23,32 @@
             <button type="submit">ADD ➕</button>
         </fieldset>
     </form>
+
+
+    <script>
+        const list = document.getElementById('list');
+        const form = document.getElementById('formCreator')
+
+        form.addEventListener('submit' , (e) => {
+            e.preventDefault();
+            const title = e.target.title.value;
+            const li = document.createElement('li');
+            li.textContent = title;
+            const removeButton = document.createElement('button')
+            removeButton.type = 'button';
+            removeButton.textContent = '❌'
+            removeButton.addEventListener('click' , (e) => {
+                e.target.parentElement.remove();
+            });
+            li.append(removeButton);
+            if (e.target.type.value === 'prepend') {
+                list.prepend(li)
+            } else if (e.target.type.value === 'append') {
+                list.append(li)
+            }
+            
+            e.target.title.value = ''
+        })
+    </script>
 </body>
 </html>
