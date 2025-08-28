@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice session2</title>
     <style>
+        [data-todo] {
+            cursor: pointer;
+        }
         [data-todo] li::before {
             content: '👉 ';
         }
@@ -16,6 +19,14 @@
         [data-todo] .success::before {
             content: '✅';
         }
+
+        [data-todo] .deleted {
+            color: red;
+        }
+
+        [data-todo] .deleted::before {
+            content: '❌';
+        }
     </style>
 
 </head>
@@ -24,15 +35,41 @@
     <br>
     <h3>List1</h3>
     <ul data-todo="list1">
-        <li data-set="success">Learing Subject C++</li>
+        <li data-status="success">Learing Subject C++</li>
         <li>Eating lunch!</li>
         <li>Doing a homework!</li>
         <li>Sleeping nap for 5 mins</li>
     </ul>
 
+    <ul data-todo="list2">
+        <li data-status="success">Learing Subject Python</li>
+        <li data-status="deleted">Eating Dinner!</li>
+        <li>Doing a housework!</li>
+        <li>Sleeping nap for 15 mins</li>
+    </ul>
+
     <script>
+        const lists = document.querySelectorAll('[data-todo]');
         for (const list of lists) {
             const items = list.querySelectorAll('li');
+            for (const item of items) {
+                const status = item.dataset.status;
+                if (status === 'success') {
+                    item.classList.add('success');
+                } else if (status === 'deleted') {
+                    item.classList.add('deleted');
+                }
+
+                item.addEventListener('click' , () => {
+                    if (item.classList.contains('success')) {
+                        item.classList.remove('success');
+                        item.classList.add('deleted');
+                    } else {
+                        item.classList.remove('deleted');
+                        item.classList.add('success');
+                    }
+                })
+            }
         }
     </script>
 </body>
