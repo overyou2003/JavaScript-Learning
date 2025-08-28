@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice session2</title>
+    <style>
+        [data-todo] li::before {
+            content: '👉 ';
+        }
+
+        [data-todo] .success {
+            color: green;
+        }
+
+        [data-todo] .success::before {
+            content: '✅';
+        }
+    </style>
+
 </head>
 <body>
-    <h1>HELLO WORLD I AM BAdsadsadadasdasdCKKK!</h1>
-    <div class="container">
-        Hello WORLD Im here ja  jjdsl
-    </div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius laudantium, enim ratione, quasi alias at illo est ipsam fugiat, nulla aliquam nostrum fugit atque? Mollitia facere odit voluptatibus rerum exercitationem?</p>
+    <h1>To do list</h1>
+    <br>
+    <h3>List1</h3>
+    <ul data-todo="list1">
+        <li data-set="success">Learing Subject C++</li>
+        <li>Eating lunch!</li>
+        <li>Doing a homework!</li>
+        <li>Sleeping nap for 5 mins</li>
+    </ul>
+
+    <script>
+        for (const list of lists) {
+            const items = list.querySelectorAll('li');
+        }
+    </script>
 </body>
 </html>
