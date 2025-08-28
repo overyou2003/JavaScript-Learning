@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id = "openModal">OPEN MODAL</button>
+
+    <dialog id="modal">
+        <p>Modal Content</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, soluta.</p>
+        <button id="closeModal">CLOSE</button>
+    </dialog>
+
+
+    <script>
+        const modal = document.getElementById('modal')
+        const openModal = document.getElementById('openModal')
+        const closeModal = document.getElementById('closeModal')
+
+        openModal.addEventListener('click' , (e) => {
+            modal.showModal();
+        })
+
+        closeModal.addEventListener('click' , (e) => {
+            modal.close();
+        })
+    </script>
+</body>
+</html>
