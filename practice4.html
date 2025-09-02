@@ -24,11 +24,17 @@
         .dropdown-menu.active {
             display: block;
         }
+
+        .dropdown-btn {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
     <div class="dropdown">
-        <button id = "dropdownButton">Toggle Menu</button>
+        <button id = "dropdownButton" class="dropdown-btn">Toggle Menu</button>
         <div class="dropdown-menu" id = "dropdownMenu">
             <a href="#">Option1</a><br>
             <a href="#">Option2</a><br>
@@ -43,6 +49,14 @@
         dropdownButton.addEventListener('click' , (e) => {
             dropdownMenu.classList.toggle('active')
             e.stopPropagation();
+        })
+
+        dropdownMenu.addEventListener('click' , (e) => {
+            e.stopPropagation();
+        })
+
+        document.addEventListener('click' , (e) => {
+            dropdownMenu.classList.remove('active')
         })
     </script>
 </body>
