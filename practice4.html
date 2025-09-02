@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
         .dropdown-menu {
             display: none;
             position: absolute;
@@ -30,5 +35,15 @@
             <a href="#">Option3</a>
         </div>
     </div>
+
+    <script>
+        const dropdownButton = document.getElementById('dropdownButton')
+        const dropdownMenu = document.getElementById('dropdownMenu')
+
+        dropdownButton.addEventListener('click' , (e) => {
+            dropdownMenu.classList.toggle('active')
+            e.stopPropagation();
+        })
+    </script>
 </body>
 </html>
