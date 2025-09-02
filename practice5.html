@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        th {
+        th , td {
             border: 1px solid black;
             padding: 10px;
+            text-align: center;
         }
         table {
             border-collapse: collapse;
         }
+
     </style>
 </head>
 <body>
@@ -56,8 +58,32 @@
         const total = document.getElementById('total')
         const formList = document.getElementById('formList')
 
-        formList.addEventListener('summit' , (e) => {
+        formList.addEventListener('submit' , (e) => {
+
             e.preventDefault();
+
+            const {product , amount} = e.currentTarget.elements;
+            if (product.value === '' || amount.value === '') {
+                alert('please enter again')
+            } else {
+                const tr = document.createElement('tr')
+            const td1 = document.createElement('td')
+            const td2 = document.createElement('td')
+
+            td1.textContent = product.value;
+            td2.textContent = amount.value;
+
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            list.appendChild(tr)
+
+            total.textContent = Number(total.textContent) + Number(amount.value)
+
+            product.value = ''
+            amount.value = ''
+
+            product.focus();
+            }
         })
     </script>
 </body>
