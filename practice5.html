@@ -18,7 +18,7 @@
     <table>
         <thead>
             <tr>
-                <th>TEXT</th>
+                <th>PRODUCT</th>
                 <th>AMOUNT</th>
             </tr>
         </thead>
@@ -37,6 +37,19 @@
     <form id="formList">
         <fieldset>
             <legend>ADD LIST</legend>
+            <div>
+                <label for="product">PRODUCT : </label>
+                <input type="text" id="product" name="product" placeholder="Enter your product">
+            </div>
+            <div>
+                <label for="amount">AMOUNT : </label>
+                <input type="number" id="amount" name="amount" placeholder="Enter your amount" min="0">
+            </div>
+            <div>
+                <button type="submit">
+                    ADD
+                </button>
+            </div>
         </fieldset>
     </form>
 </body>
