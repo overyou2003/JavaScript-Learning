@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .dropdown-menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button id = "dropdownButton">Toggle Menu</button>
+        <div class="dropdown-menu" id = "dropdownMenu">
+            <a href="#">Option1</a><br>
+            <a href="#">Option2</a><br>
+            <a href="#">Option3</a>
+        </div>
+    </div>
+</body>
+</html>
