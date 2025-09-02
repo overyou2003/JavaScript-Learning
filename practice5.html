@@ -46,11 +46,19 @@
                 <input type="number" id="amount" name="amount" placeholder="Enter your amount" min="0">
             </div>
             <div>
-                <button type="submit">
-                    ADD
-                </button>
+                <button type="submit">ADD</button>
             </div>
         </fieldset>
     </form>
+
+    <script>
+        const list = document.getElementById('list')
+        const total = document.getElementById('total')
+        const formList = document.getElementById('formList')
+
+        formList.addEventListener('summit' , (e) => {
+            e.preventDefault();
+        })
+    </script>
 </body>
 </html>
