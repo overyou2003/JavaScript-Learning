@@ -31,14 +31,22 @@ document.addEventListener('DOMContentLoaded' , () => {
                         })
                         if (response.ok) {
                             const data = await response.json();
+                            alert(`HELLO , ${data.firstName}`)
+                        } else {
+                            throw new Error(response.statusText)
                         }
-                    } catch {
-
+                    } catch(error) {
+                        alert(error.message)
                     }
                 })
+            } else {
+                throw new Error('Login Failed')
             }
-        } catch {
-            
+        } catch(error) {
+            alert(error.message)
+        } finally {
+            btnLogin.textContent = 'Login'
+            btnLogin.disabled = false
         }
     })
 })
